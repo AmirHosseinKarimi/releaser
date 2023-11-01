@@ -7,7 +7,9 @@
   "license": "LGPL-3.0-or-later",
   "homepage": "https://github.com/AmirHosseinKarimi/releaser",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "dev": "tsc -w & nodemon -q -w dist --exec 'pnpm start'",
+    "start": "probot run ./dist/app.js"
   },
   "keywords": [
     "probot",
